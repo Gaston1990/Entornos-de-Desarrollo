@@ -1,3 +1,6 @@
+package Inventario;
+
+import Inventario.Producto;
 import java.util.ArrayList;
 
 public class Inventario {
