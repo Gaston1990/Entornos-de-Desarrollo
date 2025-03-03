@@ -1,12 +1,12 @@
 package Inventario;
 
 public class Producto {
-
+    
     private String nombre;
     private double precio;
     private int stock;
 
-    // Metodo de fabrica
+    // Metodo de fabrica implementado
     public static Producto crearProducto(String nombre, double precio, int stock) {
         return new Producto(nombre, precio, stock);
     }
@@ -20,13 +20,7 @@ public class Producto {
     public void mostrarInformacion() {
         System.out.println("Producto: " + getNombre() + " | Precio: " + getPrecio() + " | Stock: " + getStock());
     }
-
-    public void borrarDatos() {
-        setNombre("");
-        setPrecio(0.0);
-        setStock(0);
-    }
-
+    
     /**
      * @return the nombre
      */
